@@ -7,10 +7,10 @@ class NetworkStudent :
 	public Student
 {
 public:
-	NetworkStudent();
-	~NetworkStudent();
-	Degree getDegreeProgram();
-	void print();
+	NetworkStudent();		// Default constructor
+	~NetworkStudent();		// Destructor
+	Degree getDegreeProgram();	// Returns degreeType
+	void print();			// Prints the NetworkStudent's information
 
 private:
 	Degree degreeType;
