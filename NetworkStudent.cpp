@@ -3,23 +3,23 @@
 #include <iostream>
 using namespace std;
 
-
+// Default constructor, sets degreeType to NETWORKING
 NetworkStudent::NetworkStudent()
 {
 	degreeType = NETWORKING;
 }
 
-
+// Destructor
 NetworkStudent::~NetworkStudent()
 {
 }
 
-
+// Getter for degreeType
 Degree NetworkStudent::getDegreeProgram() {
 	return degreeType;
 }
 
-
+// Print the NetworkStudents information
 void NetworkStudent::print() {
 	cout << this->getStudentID() << '\t';
 	cout << "First Name: " << this->getFirstName() << '\t';
