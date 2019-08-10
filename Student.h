@@ -6,10 +6,11 @@ using namespace std;
 class Student
 {
 public:
+	// Value constructor
 	Student(string id, string fName, string lName, string email, \
 		int yearsOld, int days1, int days2, int days3);
-	Student();
-	~Student();
+	Student();	// Default constructor
+	~Student();	/ Destructor
 
 	// Accessors
 	string getStudentID();
@@ -17,7 +18,7 @@ public:
 	string getLastName();
 	string getEmailAddress();
 	int getAge();
-	int getDaysToComplete(int i);
+	int getDaysToComplete(int i);	// Returns daysToComplete value at index i
 
 	// Mutators
 	void setStudentID(string id);
@@ -27,8 +28,8 @@ public:
 	void setAge(int yearsOld);
 	void setDaysToComplete(int days1, int days2, int days3);
 
-	virtual void print();
-	virtual Degree getDegreeProgram() = 0;
+	virtual void print();				// Print Student's information
+	virtual Degree getDegreeProgram() = 0;		// Return degreeType
 
 private:
 	string studentID;
