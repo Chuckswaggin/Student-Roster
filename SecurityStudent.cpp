@@ -3,23 +3,23 @@
 #include <iostream>
 using namespace std;
 
-
+// Default constructor, sets degreeType to SECURITY
 SecurityStudent::SecurityStudent()
 {
 	degreeType = SECURITY;
 }
 
-
+// Destructor
 SecurityStudent::~SecurityStudent()
 {
 }
 
-
+// Return degreeType
 Degree SecurityStudent::getDegreeProgram() {
 	return degreeType;
 }
 
-
+// Prints the SecurityStudent's information
 void SecurityStudent::print() {
 	cout << this->getStudentID() << '\t';
 	cout << "First Name: " << this->getFirstName() << '\t';
