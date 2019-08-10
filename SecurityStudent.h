@@ -6,10 +6,10 @@ class SecurityStudent :
 	public Student
 {
 public:
-	SecurityStudent();
-	Degree getDegreeProgram();
-	void print();
-	~SecurityStudent();
+	SecurityStudent();		// Default constructor
+	Degree getDegreeProgram();	// Returns degreeType
+	void print();			// Prints the SecurityStudent's information
+	~SecurityStudent();		// Destructor
 
 private:
 	Degree degreeType;
