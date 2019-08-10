@@ -5,10 +5,10 @@ class SoftwareStudent :
 	public Student
 {
 public:
-	SoftwareStudent();
-	~SoftwareStudent();
-	Degree getDegreeProgram();
-	void print();
+	SoftwareStudent();		// Default constructor
+	~SoftwareStudent();		// Destructor
+	Degree getDegreeProgram();	// Returns degreeType
+	void print();			// Prints the SoftwareStudent's information
 
 private:
 	Degree degreeType;
