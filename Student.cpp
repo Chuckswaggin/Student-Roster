@@ -10,6 +10,7 @@ Student::Student() {
 	daysToComplete[2] = 0;
 }
 
+// Value constructor
 Student::Student(string id, string fName, string lName, string email, \
 	int yearsOld, int days1, int days2, int days3) {
 	studentID = id;
@@ -24,12 +25,11 @@ Student::Student(string id, string fName, string lName, string email, \
 	return;
 }
 
-
+// Destructor
 Student::~Student()
 {
 	return;
 }
-
 
 // Accessors
 string Student::getStudentID() {
@@ -55,7 +55,6 @@ int Student::getAge() {
 int Student::getDaysToComplete(int i) {
 	return daysToComplete[i];
 }
-
 
 // Mutators
 void Student::setStudentID(string id) {
@@ -90,7 +89,7 @@ void Student::setDaysToComplete(int days1, int days2, int days3) {
 	return;
 }
 
-
+// Print the Student's information
 void Student::print() {
 	cout << this->getStudentID() << '\t';
 	cout << "First Name: " << this->getFirstName() << '\t';
