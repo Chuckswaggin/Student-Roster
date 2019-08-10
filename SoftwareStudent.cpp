@@ -3,23 +3,23 @@
 #include <iostream>
 using namespace std;
 
-
+// Default constructor, sets degreeType to SOFTWARE
 SoftwareStudent::SoftwareStudent()
 {
 	degreeType = SOFTWARE;
 }
 
-
+// Destructor
 SoftwareStudent::~SoftwareStudent()
 {
 }
 
-
+// Returns degreeType
 Degree SoftwareStudent::getDegreeProgram() {
 	return degreeType;
 }
 
-
+// Prints the SoftwareStudent's information
 void SoftwareStudent::print() {
 	cout << this->getStudentID() << '\t';
 	cout << "First Name: " << this->getFirstName() << '\t';
